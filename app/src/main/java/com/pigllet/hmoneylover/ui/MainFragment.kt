@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.pigllet.hmoneylover.R
 import com.pigllet.hmoneylover.billings.activities.BuyCoinActivity
+import com.pigllet.hmoneylover.billings.activities.IAPActivity
 import com.pigllet.hmoneylover.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -29,7 +30,7 @@ class MainFragment : Fragment() {
             findNavController().navigate(R.id.action_to_homeFragment)
         }
         binding.btnBuy.setOnClickListener {
-            startActivity(Intent(activity, BuyCoinActivity::class.java))
+            startActivity(Intent(activity, IAPActivity::class.java))
         }
     }
 
