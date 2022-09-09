@@ -35,6 +35,14 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    signingConfigs {
+        release {
+            keyAlias "hmoneylove"
+            keyPassword "123456"
+            storeFile file('../certificate/keystore.jks')
+            storePassword "123456"
+        }
+    }
 }
 
 dependencies {
