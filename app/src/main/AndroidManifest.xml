@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.pigllet.hmoneylover">
+    package="com.financemanage.hmoneylover">
 
     <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
-        android:name=".application.PersonalExpenseTracker"
+        android:name="com.financemanage.hmoneylover.application.PersonalExpenseTracker"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,9 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HMoneyLover"
         tools:targetApi="31">
-        <activity android:name=".ui.MainActivity" />
+        <activity android:name="com.financemanage.hmoneylover.ui.MainActivity" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.financemanage.hmoneylover.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,13 +27,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".billings.activities.BuyCoinActivity"
+            android:name="com.financemanage.hmoneylover.billings.activities.BuyCoinActivity"
             android:exported="true" />
         <activity
-            android:name=".billings.activities.Subscriptions"
+            android:name="com.financemanage.hmoneylover.billings.activities.Subscriptions"
             android:exported="true" />
         <activity
-            android:name=".billings.activities.IAPActivity"
+            android:name="com.financemanage.hmoneylover.billings.activities.IAPActivity"
             android:exported="true" />
     </application>
 

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.pigllet.hmoneylover.ui.MainFragment"
+        android:name="com.financemanage.hmoneylover.ui.MainFragment"
         android:label="HMoney Lover"
         tools:layout="@layout/fragment_main" >
         <action
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.pigllet.hmoneylover.ui.view.home.HomeFragment"
+        android:name="com.financemanage.hmoneylover.ui.view.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/addTransactionFragment"
-        android:name="com.pigllet.hmoneylover.ui.view.add.AddTransactionFragment"
+        android:name="com.financemanage.hmoneylover.ui.view.add.AddTransactionFragment"
         android:label="fragment_add_transaction"
         tools:layout="@layout/fragment_add_transaction" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/transactionDetailsFragment"
-        android:name="com.pigllet.hmoneylover.ui.view.details.TransactionDetailsFragment"
+        android:name="com.financemanage.hmoneylover.ui.view.details.TransactionDetailsFragment"
         android:label="fragment_transaction_details"
         tools:layout="@layout/fragment_transaction_details" >
         <action
@@ -67,11 +67,11 @@
             app:destination="@id/errorDialog" />
         <argument
             android:name="transaction"
-            app:argType="com.pigllet.hmoneylover.model.Transaction" />
+            app:argType="com.financemanage.hmoneylover.model.Transaction" />
     </fragment>
     <fragment
         android:id="@+id/editTransactionFragment"
-        android:name="com.pigllet.hmoneylover.ui.view.edit.EditTransactionFragment"
+        android:name="com.financemanage.hmoneylover.ui.view.edit.EditTransactionFragment"
         android:label="fragment_edit_transaction"
         tools:layout="@layout/fragment_edit_transaction" >
         <action
@@ -79,11 +79,11 @@
             app:destination="@id/transactionDetailsFragment" />
         <argument
             android:name="transaction"
-            app:argType="com.pigllet.hmoneylover.model.Transaction" />
+            app:argType="com.financemanage.hmoneylover.model.Transaction" />
     </fragment>
     <dialog
         android:id="@+id/errorDialog"
-        android:name="com.pigllet.hmoneylover.ui.view.dialog.ErrorDialog"
+        android:name="com.financemanage.hmoneylover.ui.view.dialog.ErrorDialog"
         android:label="ErrorDialog"
         tools:layout="@layout/item_error_dialog">
         <argument
